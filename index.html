@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="my first html Sign-Up screen">
+        <title>Sign-Up screen</title>
+    </head>
+
+    <body>
+        <h1>Sign-Up</h1>
+        <h2>please sign-up to the website to continue exploring</h2>
+        <form action="" method="post" target="_blank" >
+            <div class="Email">
+                <label>Email:</label>
+                <input type="email" placeholder="example@email.com" name="email" required autofocus>
+            </div>
+            <br>                
+            <div class="password">
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="enter a strong password" minlength="8" maxlength="16" required>
+            </div>
+            <hr>
+            <br>
+            <div class="Age">
+                <label>Age:</label>
+                <input type="number" name="age" min="13" max="100" value="15" required>
+                <br>
+            </div>
+            <div class="Gender">
+                <label for="Gender">your Gender:</label>
+                <select name="Gender" id="Gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="from">
+                <label for="countery">where are you from?</label>
+                <input list="counterys" name="from" id="countery">
+                <datalist id="counterys">
+                    <option value="Yemen">
+                    <option value="Saudi Arabia">
+                    <option value="United Arab Emirates">
+                    <option value="Kuwait">
+                    <option value="Qatar">
+                    <option value="Bahrain">
+                    <option value="Oman">
+                    <option value="Iraq">
+                    <option value="Jordan">
+                    <option value="Lebanon">
+                    <option value="Syria">
+                    <option value="Palestine">
+                    <option value="Egypt">
+                    <option value="Sudan">
+                    <option value="Libya">
+                    <option value="Tunisia">
+                    <option value="Algeria">
+                    <option value="Morocco">
+                    <option value="Mauritania">
+                    <option value="Somalia">
+                    <option value="Comoros">
+                    <option value="Djibouti">
+                </datalist>
+            </div>
+            
+            <br>
+            <hr>
+            <div calsss="OS">
+                <h2>Which OS do you use?</h2>
+                <input type="radio" name="OS" value="Windows" id="Windows" checked>
+                <label for="Windows">Windows</label>
+                <br>
+                <input type="radio" name="OS" value="Linux" id="Linux">
+                <label for="Linux">Linux</label>
+                <br>
+                <input type="radio" name="OS" value="MacOS" id="MacOS">
+                <label for="MacOS">MacOS</label>
+                <br>
+                <input type="radio" name="OS" value="Androd" id="Androd">
+                <label for="Androd">Androd</label>
+                <br>
+                <input type="radio" name="OS" value="IOS" id="iOS">
+                <label for="iOS">iOS</label>
+            </div>
+            <hr>
+            <br>
+            <div class="yes">
+                <input type="checkbox" name="checkbox1" required checked id="checkbox1">
+                <label for="checkbox1">هل توافق على بيع بياناتك في سوق السوداء؟</label>
+            </div>
+            <br>
+            <input type="reset">
+            <input type="submit" value="Sign-Up">
+        </form>
+    </body>
+    </html>
