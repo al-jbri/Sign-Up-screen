@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+p, h1, h2, h3 {
+    color: white;
+
+}
+
+h3 {
+    margin: -20px 0px 0px 0px;
+}
+
+.horror {
+    color: red;
+}
